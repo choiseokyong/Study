@@ -28,7 +28,7 @@
 		if(!rs.next()){
 			out.print("데이터가 없습니다.");
 		}else{
-			out.print("<form action='modify.jsp' method='post'>");
+			out.print("<form action='modify.jsp?id="+rs.getString("id")+"' method='post'>");
 			out.print("<table>");
 			out.print("<tr><td><input type='text' name='name' value='"+rs.getString("name")+"' placeholder='이름'></td></tr>");
 			out.print("<tr><td><input type='text' name='pwd' value='"+rs.getString("password")+"' placeholder='비밀번호'></td></tr>");
